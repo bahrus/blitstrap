@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blitstrap Card Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 2rem;
+            background-color: #f8f9fa;
+        }
+
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h1,
+        h2 {
+            color: #212529;
+        }
+
+        .demo-section {
+            margin-bottom: 3rem;
+        }
+    </style>
+    <script type=importmap>
+    {
+        "imports": {
+            "@lit/": "/node_modules/@lit/",
+            "@lit/reactive-element": "/node_modules/@lit/reactive-element/reactive-element.js",
+            "@lit/reactive-element/": "/node_modules/@lit/reactive-element/",
+            "@material/": "/node_modules/@material/",
+            "be-a-beacon/": "/node_modules/be-a-beacon/",
+            "be-based/": "/node_modules/be-based/",
+            "be-directive/": "/node_modules/be-directive/",
+            "be-enhanced/": "/node_modules/be-enhanced/",
+            "be-enhancing/": "/node_modules/be-enhancing/",
+            "be-importing/": "/node_modules/be-importing/",
+            "be-observing/": "/node_modules/be-observing/",
+            "be-hive/":  "/node_modules/be-hive/",
+            "be-switched/": "/node_modules/be-switched/",
+            "be-written/": "/node_modules/be-written/",
+            "blow-dry/": "/node_modules/blow-dry/",
+            "co-pair/": "/",
+            "data-props/": "/node_modules/data-props/",
+            "do-inc/": "/node_modules/do-inc/",
+            "do-invoke/": "/node_modules/do-invoke/",
+            "folder-picker/": "/node_modules/folder-picker/",
+            "mount-observer/": "/node_modules/mount-observer/",
+            "lit": "/node_modules/lit/index.js",
+            "lit/": "/node_modules/lit/",
+            "lit-element/": "/node_modules/lit-element/",
+            "lit-html/": "/node_modules/lit-html/",
+            "lit-html": "/node_modules/lit-html/lit-html.js",
+            "per-each/": "/node_modules/per-each/",
+            "stream-orator/": "/node_modules/stream-orator/",
+            "trans-render/": "/node_modules/trans-render/",
+            "tslib": "/node_modules/tslib/tslib.es6.js",
+            "tslib/": "/node_modules/tslib/",
+            "xtal-element/": "/node_modules/xtal-element/"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div class="demo-container">
+        <h1>Blitstrap Card Component Demo</h1>
+
+        <div class="demo-section">
+            <h2>Basic Cards</h2>
+            <div class="demo-grid">
+                <bs-card card-title="Basic Card" subtitle="Card subtitle">
+                    This is a basic card with some example text to build on the card title and make up the bulk of the
+                    card's content.
+                </bs-card>
+
+                <bs-card header="Card Header" card-title="Card with Header" footer="Card Footer">
+                    This card has both a header and footer section along with the main content area.
+                </bs-card>
+
+                <bs-card img-top="https://via.placeholder.com/300x200/0d6efd/ffffff?text=Image+Top"
+                    img-alt="Placeholder image" card-title="Card with Image">
+                    This card includes an image at the top. The image spans the full width of the card.
+                </bs-card>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Card Variants</h2>
+            <div class="demo-grid">
+                <bs-card variant="primary" card-title="Primary Card">
+                    This is a primary variant card with white text on blue background.
+                </bs-card>
+
+                <bs-card variant="success" card-title="Success Card">
+                    This is a success variant card with white text on green background.
+                </bs-card>
+
+                <bs-card variant="danger" card-title="Danger Card">
+                    This is a danger variant card with white text on red background.
+                </bs-card>
+
+                <bs-card variant="warning" card-title="Warning Card">
+                    This is a warning variant card with dark text on yellow background.
+                </bs-card>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Outline Variants</h2>
+            <div class="demo-grid">
+                <bs-card variant="outline-primary" card-title="Outline Primary">
+                    This is an outline primary card with blue border and text.
+                </bs-card>
+
+                <bs-card variant="outline-success" card-title="Outline Success">
+                    This is an outline success card with green border and text.
+                </bs-card>
+
+                <bs-card variant="outline-danger" card-title="Outline Danger">
+                    This is an outline danger card with red border and text.
+                </bs-card>
+
+                <bs-card variant="outline-info" card-title="Outline Info">
+                    This is an outline info card with cyan border and text.
+                </bs-card>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./dist/index.js"></script>
+</body>
+
+</html>
