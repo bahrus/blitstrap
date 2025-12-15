@@ -1,0 +1,20 @@
+{
+  "name": "blitstrap",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/bahrus/blitstrap#readme",
+  "bugs": {
+    "url": "https://github.com/bahrus/blitstrap/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahrus/blitstrap.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
